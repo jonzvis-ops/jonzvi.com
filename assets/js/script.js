@@ -47,20 +47,20 @@
     img.addEventListener("error", swap);
   });
 
-  // Contact form (FormSubmit.co — free, no backend needed)
+  // Contact form (Web3Forms — free, no backend needed)
   var form = document.getElementById("contact-form");
   if (form) {
     var status = form.querySelector(".status");
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      if (form.querySelector("[name=_honey]").value) return;
+      if (form.querySelector("[name=botcheck]").checked) return;
       var submit = form.querySelector("button[type=submit]");
       submit.disabled = true;
       status.className = "status";
       status.textContent = "Sending…";
       var data = new FormData(form);
       var name = [data.get("first_name"), data.get("last_name")].filter(Boolean).join(" ");
-      data.set("_subject", "jonzvi.com: " + (data.get("subject") || "New message") + (name ? " — " + name : ""));
+      data.set("subject", "jonzvi.com: " + (data.get("subject") || "New message") + (name ? " — " + name : ""));
       fetch(form.action, { method: "POST", body: data, headers: { Accept: "application/json" } })
         .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
         .then(function (res) {
