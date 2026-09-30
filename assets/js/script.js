@@ -67,11 +67,22 @@
           if (res.ok && String(res.j.success) !== "false") {
             status.textContent = "Thanks for submitting!";
             form.reset();
-          } else { throw new Error(res.j.message || "Error"); }
+          } else {
+            var err = new Error(res.j.message || "Error");
+            err.server = res.j.message;
+            throw err;
+          }
         })
-        .catch(function () {
+        .catch(function (err) {
           status.className = "status error";
-          status.innerHTML = 'Something went wrong. Please email <a href="mailto:jonzvis@gmail.com">jonzvis@gmail.com</a>.';
+          var msg = err && err.server ? err.server + " " : "Something went wrong. ";
+          status.innerHTML = "";
+          status.appendChild(document.createTextNode(msg + "You can also email "));
+          var a = document.createElement("a");
+          a.href = "mailto:jonzvis@gmail.com";
+          a.textContent = "jonzvis@gmail.com";
+          status.appendChild(a);
+          status.appendChild(document.createTextNode("."));
         })
         .finally(function () { submit.disabled = false; });
     });
