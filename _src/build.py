@@ -205,10 +205,10 @@ def build_home():
             <div class="divider"></div>
             <address>Tel-Aviv, Israel<br><br><a href="tel:+972548017178">(+972)0548017178</a></address>
           </div>
-          <form class="form" id="contact-form" action="https://formsubmit.co/ajax/jonzvis@gmail.com" method="POST">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <form class="form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="37b05d80-9bc0-4153-b39c-04d88c804dc6">
+            <input type="hidden" name="from_name" value="jonzvi.com contact form">
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="field"><label for="f-first">First Name</label><input id="f-first" name="first_name" type="text" autocomplete="given-name"></div>
             <div class="field"><label for="f-last">Last Name</label><input id="f-last" name="last_name" type="text" autocomplete="family-name"></div>
             <div class="field"><label for="f-email">Email *</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
