@@ -12,4 +12,4 @@ Portfolio of Jonathan Zvi Shmuely, Industrial Designer. This is a plain HTML/CSS
 Open `_src/data.py` on GitHub, click the pencil icon, change the text, and click **Commit changes**.
 
 ## Contact form
-The contact form uses [FormSubmit](https://formsubmit.co), which sends messages to jonzvis@gmail.com. The first message you receive asks you to confirm the address once.
+The contact form uses [Web3Forms](https://web3forms.com) (free account under jonzvis@gmail.com); messages go to jonzvis@gmail.com.
