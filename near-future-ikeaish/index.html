@@ -20,6 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800&display=swap">
   <link rel="stylesheet" href="../assets/css/style.css?v=20261013e">
+  <link rel="stylesheet" href="../assets/css/model-3d.css?v=20261014a">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to Main Content</a>
@@ -51,6 +52,29 @@
         <div><dt>Year</dt><dd>2022</dd></div>
       </dl>
     </div>
+    <section class="wrap model-3d" aria-label="3D models">
+      <h2 class="label">3D models</h2>
+      <div class="model-grid">
+        <figure class="model-card">
+          <model-viewer src="../assets/models/ikeaish_armchair.glb" data-swatches="fabric,back,wood" data-states="Studio:studio,At home:athome" animation-crossfade-duration="0" data-box="-0.3516,0,-0.3548,0.3516,0.8845,0.3548" alt="3D model of Fåtölj, lifestyle armchair" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="1" shadow-softness="0.8" exposure="1" environment-image="neutral" camera-orbit="30deg 72deg 3.05m" field-of-view="30deg" max-camera-orbit="auto auto 8m" loading="lazy" reveal="auto"></model-viewer>
+          <figcaption><strong>Fåtölj</strong><span>Lifestyle armchair</span></figcaption>
+          <div class="states"></div>
+          <div class="swatches"></div>
+        </figure>
+        <figure class="model-card">
+          <model-viewer src="../assets/models/ikeaish_stool.glb" data-swatches="stool,wood" data-states="Stool:assemble,Split:split" animation-crossfade-duration="0" data-box="-0.1435,0,-0.139,0.1427,0.4233,0.1384" data-box-assemble="-0.1435,0,-0.139,0.1427,0.4233,0.1384" data-box-split="-0.1339,0,-0.139,0.4427,0.4053,0.1384" data-cam-assemble="25deg 72deg 1.38m|0m 0.21m 0m" data-cam-split="20deg 70deg 1.9m|0.15m 0.19m 0m" alt="3D model of Förvaringsstol, storage stool with removable bin" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="1" shadow-softness="0.8" exposure="1" environment-image="neutral" camera-target="0m 0.21m 0m" camera-orbit="25deg 72deg 1.38m" field-of-view="30deg" max-camera-orbit="auto auto 4m" loading="lazy" reveal="auto"></model-viewer>
+          <figcaption><strong>Förvaringsstol</strong><span>Storage stool</span></figcaption>
+          <div class="states"></div>
+          <div class="swatches"></div>
+        </figure>
+        <figure class="model-card">
+          <model-viewer src="../assets/models/ikeaish_tray.glb" data-swatches="wood" data-states="Open:open,Closed:close" data-box="-0.1856,0,-0.065,0.1856,0.0482,0.065" data-box-open="-0.1856,0,-0.065,0.1856,0.0482,0.065" data-box-close="-0.1391,0,-0.065,0.1401,0.0485,0.065" animation-crossfade-duration="0" alt="3D model of Hemligt Förråd, tray with a secret compartment, shown open" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="1" shadow-softness="0.8" exposure="1" environment-image="neutral" camera-orbit="25deg 55deg 0.98m" field-of-view="30deg" max-camera-orbit="auto auto 3m" loading="lazy" reveal="auto"></model-viewer>
+          <figcaption><strong>Hemligt Förråd</strong><span>Tray with a secret</span></figcaption>
+          <div class="states"></div>
+          <div class="swatches"></div>
+        </figure>
+      </div>
+    </section>
     <section class="wrap project-text" aria-label="About the project">
       <h2 class="label">About the project</h2>
       <p class="lead">The course focuses on designing a product or two that are intended to be manufactured in &quot;Near Future&quot;.</p>
@@ -82,5 +106,7 @@
     </div>
   </footer>
   <script src="../assets/js/script.js?v=20261013b" defer></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.0.0/dist/model-viewer.min.js"></script>
+  <script src="../assets/js/ikeaish-3d.js?v=20261014a" defer></script>
 </body>
 </html>
