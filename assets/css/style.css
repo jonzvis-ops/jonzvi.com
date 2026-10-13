@@ -82,6 +82,7 @@ ul,ol{list-style:none}
 .gallery .portrait-video video{aspect-ratio:3/4;object-fit:cover;border-radius:4px}
 @media (max-width:760px){.gallery .portrait-video{width:60%}}
 .pair figure{border-radius:4px;overflow:hidden}
+.gallery .video-pair .video{background:none}
 .video-pair video{width:100%;aspect-ratio:var(--ar);object-fit:cover;display:block}
 .video-pair figcaption{font-size:14px;color:var(--mute);padding-top:10px;background:var(--bg)}
 .pair.trio{grid-template-columns:repeat(3,1fr)}
