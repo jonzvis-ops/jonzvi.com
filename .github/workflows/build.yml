@@ -3,10 +3,9 @@ name: Build site & copy images from Wix
 # 1) Generates all HTML pages from _src/ (text + image lists live in _src/data.py)
 # 2) Downloads any image / PDF listed in assets/manifest.txt that isn't in the repo yet
 # 3) Commits the result, and GitHub Pages publishes it.
+# Turned off for automatic runs in Oct 2026: the pages now use the 2026 redesign,
+# which _src/build.py does not produce. Running it would bring back the old Wix look.
 on:
-  push:
-    branches: [main]
-    paths: ["_src/**", ".github/**"]
   workflow_dispatch:
 
 permissions:

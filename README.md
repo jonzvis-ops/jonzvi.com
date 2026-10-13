@@ -2,7 +2,10 @@
 
 Portfolio of Jonathan Zvi Shmuely, Industrial Designer. This is a plain HTML/CSS/JS site hosted for free on GitHub Pages. It was moved here from Wix.
 
-## How it works
+## 2026 redesign
+The site was redesigned in Oct 2026 ("Studio Minimal" style). The HTML pages are now edited directly; `_src/` is the old generator and no longer matches the design, so its automatic build is turned off. Don't run the build workflow unless `_src/build.py` is updated to the new design first.
+
+## How it worked before (old generator)
 - `_src/data.py` holds every project's text and image list, `_src/build.py` builds the HTML pages from it, and `_src/icons.py` holds the icons.
 - Changing anything in `_src/` starts the **Build site & copy images from Wix** workflow (Actions tab). It regenerates the pages (`index.html`, `<project>/index.html`, `404.html`, `sitemap.xml`, …), downloads any new images listed in `assets/manifest.txt`, and commits the result. The live site updates about a minute later.
 - `assets/css/style.css` and `assets/js/script.js` are edited directly.
