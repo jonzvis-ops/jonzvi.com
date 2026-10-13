@@ -41,6 +41,10 @@ ul,ol{list-style:none}
 .intro-side .small{font-size:14px;color:var(--mute);margin-top:12px}
 .hero img{width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:4px}
 
+.hero-trio{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.hero-trio img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+@media (max-width:760px){.hero-trio{gap:6px}.hero-trio img{aspect-ratio:3/4}}
+
 /* skills */
 .skills{padding-top:72px}
 .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
