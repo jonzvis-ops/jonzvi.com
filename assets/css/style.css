@@ -47,7 +47,7 @@ ul,ol{list-style:none}
 
 /* skills */
 .skills{padding-top:72px}
-.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
+.skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
 .skills h3{font-size:22px;letter-spacing:-.02em;font-weight:700;margin-bottom:6px}
 .skills p{color:var(--text)}
 
@@ -175,6 +175,7 @@ ul,ol{list-style:none}
 
 /* responsive */
 @media (max-width:900px){
+  .skills-grid{grid-template-columns:repeat(2,1fr)}
   .work-row{grid-template-columns:40px 1fr 60px 140px}
   .work-row .sub{display:none}
 }
