@@ -78,7 +78,9 @@ ul,ol{list-style:none}
 .gallery .video figcaption{background:var(--bg);font-size:14px;color:var(--mute);padding-top:10px}
 .gallery .video figcaption a{color:var(--ink)}
 
-.gallery .portrait-video{max-width:420px;width:100%;margin:0 auto;background:none}
+.gallery .portrait-video{width:calc((100% - 32px)/3);margin:0 auto;background:none}
+.gallery .portrait-video video{aspect-ratio:3/4;object-fit:cover;border-radius:4px}
+@media (max-width:760px){.gallery .portrait-video{width:60%}}
 .pair figure{border-radius:4px;overflow:hidden}
 .pair.trio{grid-template-columns:repeat(3,1fr)}
 .gallery .narrow{max-width:760px;width:100%;margin:0 auto;background:#fff}
