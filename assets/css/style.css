@@ -80,6 +80,7 @@ ul,ol{list-style:none}
 
 .gallery .portrait-video{max-width:420px;width:100%;margin:0 auto;background:none}
 .pair figure{border-radius:4px;overflow:hidden}
+.pair.trio{grid-template-columns:repeat(3,1fr)}
 .gallery .narrow{max-width:760px;width:100%;margin:0 auto;background:#fff}
 
 /* about */
