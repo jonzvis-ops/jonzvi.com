@@ -78,6 +78,10 @@ ul,ol{list-style:none}
 .gallery .video figcaption{background:var(--bg);font-size:14px;color:var(--mute);padding-top:10px}
 .gallery .video figcaption a{color:var(--ink)}
 
+.gallery .portrait-video{max-width:420px;width:100%;margin:0 auto;background:none}
+.pair figure{border-radius:4px;overflow:hidden}
+.gallery .narrow{max-width:760px;width:100%;margin:0 auto;background:#fff}
+
 /* about */
 .about{display:grid;grid-template-columns:1fr 1fr;gap:56px;padding-top:110px;padding-bottom:110px}
 .about .quote{font-size:clamp(32px,3.6vw,46px);line-height:1.05;letter-spacing:-.035em;font-weight:700;margin:18px 0 32px}
