@@ -29,3 +29,12 @@
 .states button:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 @media (max-width:860px){.model-grid{grid-template-columns:1fr;gap:40px}.model-card model-viewer{aspect-ratio:1/1}}
 @media (prefers-reduced-motion:reduce){.swatch-dots button{transition:none}}
+/* Homepage 3D hero: 2 viewers side by side */
+.hero-3d{padding-bottom:40px}
+.hero-3d .model-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.hero-3d .model-card model-viewer{aspect-ratio:1/1}
+.hero-3d .swatches{display:none}
+.hero-3d .model-card figcaption a{color:var(--ink);font-weight:500;text-decoration:none}
+.hero-3d .model-card figcaption a:hover{text-decoration:underline}
+@media (max-width:760px){.hero-3d .model-grid{grid-template-columns:1fr;gap:32px}}
+.hero-3d .model-card figcaption a.more{color:var(--mute);font-size:14px;font-weight:400}

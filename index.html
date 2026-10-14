@@ -20,6 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800&display=swap">
   <link rel="stylesheet" href="assets/css/style.css?v=20261013e">
+  <link rel="stylesheet" href="assets/css/model-3d.css?v=20261014c">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Jonathan Zvi Shmuely", "alternateName": "Jon Zvi", "jobTitle": "Industrial Designer", "url": "https://jonzvi.com/", "email": "mailto:jonzvis@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Tel-Aviv", "addressCountry": "IL"}, "alumniOf": "Shenkar College of Engineering and Design", "sameAs": ["https://www.linkedin.com/in/jonzvi/", "https://www.instagram.com/shmuely/"]}</script>
 </head>
 <body>
@@ -46,7 +47,21 @@
         <p class="small">B.Des, Shenkar College of Engineering and Design, 2022</p>
       </div>
     </section>
-    <div class="hero hero-trio wrap"><img src="assets/img/hero-aok-1200.webp" srcset="assets/img/hero-aok-480.webp 480w, assets/img/hero-aok-800.webp 800w, assets/img/hero-aok-1200.webp 1200w" sizes="(min-width: 1280px) 400px, 33vw" alt="A.O.K. outdoor kitchen grill and spork" width="1200" height="900" decoding="async"><img src="assets/img/hero-velspresso-1200.webp" srcset="assets/img/hero-velspresso-480.webp 480w, assets/img/hero-velspresso-800.webp 800w, assets/img/hero-velspresso-1200.webp 1200w" sizes="(min-width: 1280px) 400px, 33vw" alt="Vélspresso 3-in-1 espresso machine" width="1200" height="900" decoding="async"><img src="assets/img/hero-suna-1200.webp" srcset="assets/img/hero-suna-480.webp 480w, assets/img/hero-suna-800.webp 800w, assets/img/hero-suna-1200.webp 1200w" sizes="(min-width: 1280px) 400px, 33vw" alt="Suna coffee table in a living room" width="1200" height="900" decoding="async"></div>
+    <section class="hero-3d wrap model-3d" aria-label="3D hero">
+      <div class="model-grid">
+        <figure class="model-card">
+          <model-viewer src="assets/models/aok_multitool.glb" data-modes="Closed:closed,Wine opener:wine,Can opener:can,Fire:fire,Knife:knife,All open:allopen" animation-crossfade-duration="0" alt="3D model of the A.O.K. multi-tool" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0" exposure="1" environment-image="neutral" camera-target="0.01m 0.075m 0m" camera-orbit="25deg 75deg 0.62m" max-camera-orbit="auto auto 1.5m" field-of-view="30deg" loading="eager" reveal="auto"></model-viewer>
+          <figcaption><a href="a-o-k/index.html">Multi-tool · A.O.K.</a><a class="more" href="a-o-k/index.html">View project →</a></figcaption>
+          <div class="states"></div>
+        </figure>
+        <figure class="model-card">
+          <model-viewer src="assets/models/ikeaish_stool.glb" data-swatches="stool,wood" data-states="Stool:assemble,Split:split" animation-crossfade-duration="0" data-cam-assemble="25deg 72deg 1.38m|0m 0.21m 0m" data-cam-split="20deg 70deg 1.9m|0.15m 0.19m 0m" alt="3D model of the Förvaringsstol storage stool with removable bin" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="1" shadow-softness="0.8" exposure="1" environment-image="neutral" camera-target="0m 0.21m 0m" camera-orbit="25deg 72deg 1.38m" field-of-view="30deg" max-camera-orbit="auto auto 4m" loading="eager" reveal="auto"></model-viewer>
+          <figcaption><a href="near-future-ikeaish/index.html">Storage stool · Near Future, IKEA&#x27;ish</a><a class="more" href="near-future-ikeaish/index.html">View project →</a></figcaption>
+          <div class="states"></div>
+          <div class="swatches"></div>
+        </figure>
+      </div>
+    </section>
 
     <section class="skills wrap" id="skills" aria-labelledby="skills-h">
       <h2 class="label" id="skills-h">Design skills</h2>
@@ -88,33 +103,33 @@
           <span class="yr">2022</span>
           <span class="thumb"><img src="assets/img/01fe578ed50c41888062342454a3a557-1300.webp" srcset="assets/img/01fe578ed50c41888062342454a3a557-480.webp 480w, assets/img/01fe578ed50c41888062342454a3a557-800.webp 800w, assets/img/01fe578ed50c41888062342454a3a557-1300.webp 1300w" sizes="(min-width: 760px) 200px, 110px" data-fallback="https://static.wixstatic.com/media/a67c6c_01fe578ed50c41888062342454a3a557~mv2.jpg/v1/fit/w_1300,h_5200,q_85/01fe578ed50c41888062342454a3a557.webp" alt="A.O.K. — Adjustable Outdoor Kitchen" width="638" height="358"></span>
         </a></li>
-        <li><a class="work-row" href="velspresso/index.html">
-          <span class="num">02</span>
-          <span class="name">Vélspresso</span>
-          <span class="sub">3 IN 1 Espresso Machine</span>
-          <span class="yr">2020</span>
-          <span class="thumb"><img src="assets/img/f168d34a0dcc409499e9700b4d5b09f0-1300.webp" srcset="assets/img/f168d34a0dcc409499e9700b4d5b09f0-480.webp 480w, assets/img/f168d34a0dcc409499e9700b4d5b09f0-800.webp 800w, assets/img/f168d34a0dcc409499e9700b4d5b09f0-1300.webp 1300w" sizes="(min-width: 760px) 200px, 110px" data-fallback="https://static.wixstatic.com/media/a67c6c_f168d34a0dcc409499e9700b4d5b09f0~mv2.png/v1/fit/w_1300,h_5200,q_85/f168d34a0dcc409499e9700b4d5b09f0.webp" alt="Vélspresso — 3 IN 1 Espresso Machine" width="638" height="358"></span>
-        </a></li>
-        <li><a class="work-row" href="suna/index.html">
-          <span class="num">03</span>
-          <span class="name">Suna</span>
-          <span class="sub">Coffee Table - Sand Course 3rd year</span>
-          <span class="yr">2021</span>
-          <span class="thumb"><img src="assets/img/a06ccae70d6a4e2bbaa74bbd60bab574-1300.webp" srcset="assets/img/a06ccae70d6a4e2bbaa74bbd60bab574-480.webp 480w, assets/img/a06ccae70d6a4e2bbaa74bbd60bab574-800.webp 800w, assets/img/a06ccae70d6a4e2bbaa74bbd60bab574-1300.webp 1300w" sizes="(min-width: 760px) 200px, 110px" data-fallback="https://static.wixstatic.com/media/a67c6c_a06ccae70d6a4e2bbaa74bbd60bab574~mv2.png/v1/fit/w_1300,h_5200,q_85/a06ccae70d6a4e2bbaa74bbd60bab574.webp" alt="Suna — Coffee Table - Sand Course 3rd year" width="638" height="358"></span>
-        </a></li>
-        <li><a class="work-row" href="foglie-d-autunno/index.html">
-          <span class="num">04</span>
-          <span class="name">Foglie D&#x27;autunno</span>
-          <span class="sub">Pasta Design Course</span>
-          <span class="yr">2021</span>
-          <span class="thumb"><img src="assets/img/112171cbb2534dc588a53a9c0d4a0c8c-1300.webp" srcset="assets/img/112171cbb2534dc588a53a9c0d4a0c8c-480.webp 480w, assets/img/112171cbb2534dc588a53a9c0d4a0c8c-800.webp 800w, assets/img/112171cbb2534dc588a53a9c0d4a0c8c-1300.webp 1300w" sizes="(min-width: 760px) 200px, 110px" data-fallback="https://static.wixstatic.com/media/a67c6c_112171cbb2534dc588a53a9c0d4a0c8c~mv2.jpg/v1/fit/w_1300,h_5200,q_85/112171cbb2534dc588a53a9c0d4a0c8c.webp" alt="Foglie D&#x27;autunno — Pasta Design Course" width="638" height="358" loading="lazy" decoding="async"></span>
-        </a></li>
         <li><a class="work-row" href="near-future-ikeaish/index.html">
-          <span class="num">05</span>
+          <span class="num">02</span>
           <span class="name">Near Future, IKEA&#x27;ish</span>
           <span class="sub">The course was around IKEA style, near future products and my project was around the word &quot;Security&quot;.</span>
           <span class="yr">2022</span>
           <span class="thumb"><img src="assets/img/f19309b5be794987b525d7c27dc0cf8d-1300.webp" srcset="assets/img/f19309b5be794987b525d7c27dc0cf8d-480.webp 480w, assets/img/f19309b5be794987b525d7c27dc0cf8d-800.webp 800w, assets/img/f19309b5be794987b525d7c27dc0cf8d-1300.webp 1300w" sizes="(min-width: 760px) 200px, 110px" data-fallback="https://static.wixstatic.com/media/a67c6c_f19309b5be794987b525d7c27dc0cf8d~mv2.jpg/v1/fit/w_1300,h_5200,q_85/f19309b5be794987b525d7c27dc0cf8d.webp" alt="Near Future, IKEA&#x27;ish — The course was around IKEA style, near future products and my project was around the word &quot;Security&quot;." width="638" height="358" loading="lazy" decoding="async"></span>
+        </a></li>
+        <li><a class="work-row" href="velspresso/index.html">
+          <span class="num">03</span>
+          <span class="name">Vélspresso</span>
+          <span class="sub">3 IN 1 Espresso Machine</span>
+          <span class="yr">2020</span>
+          <span class="thumb"><img src="assets/img/f168d34a0dcc409499e9700b4d5b09f0-1300.webp" srcset="assets/img/f168d34a0dcc409499e9700b4d5b09f0-480.webp 480w, assets/img/f168d34a0dcc409499e9700b4d5b09f0-800.webp 800w, assets/img/f168d34a0dcc409499e9700b4d5b09f0-1300.webp 1300w" sizes="(min-width: 760px) 200px, 110px" data-fallback="https://static.wixstatic.com/media/a67c6c_f168d34a0dcc409499e9700b4d5b09f0~mv2.png/v1/fit/w_1300,h_5200,q_85/f168d34a0dcc409499e9700b4d5b09f0.webp" alt="Vélspresso — 3 IN 1 Espresso Machine" width="638" height="358" loading="lazy" decoding="async"></span>
+        </a></li>
+        <li><a class="work-row" href="suna/index.html">
+          <span class="num">04</span>
+          <span class="name">Suna</span>
+          <span class="sub">Coffee Table - Sand Course 3rd year</span>
+          <span class="yr">2021</span>
+          <span class="thumb"><img src="assets/img/a06ccae70d6a4e2bbaa74bbd60bab574-1300.webp" srcset="assets/img/a06ccae70d6a4e2bbaa74bbd60bab574-480.webp 480w, assets/img/a06ccae70d6a4e2bbaa74bbd60bab574-800.webp 800w, assets/img/a06ccae70d6a4e2bbaa74bbd60bab574-1300.webp 1300w" sizes="(min-width: 760px) 200px, 110px" data-fallback="https://static.wixstatic.com/media/a67c6c_a06ccae70d6a4e2bbaa74bbd60bab574~mv2.png/v1/fit/w_1300,h_5200,q_85/a06ccae70d6a4e2bbaa74bbd60bab574.webp" alt="Suna — Coffee Table - Sand Course 3rd year" width="638" height="358" loading="lazy" decoding="async"></span>
+        </a></li>
+        <li><a class="work-row" href="foglie-d-autunno/index.html">
+          <span class="num">05</span>
+          <span class="name">Foglie D&#x27;autunno</span>
+          <span class="sub">Pasta Design Course</span>
+          <span class="yr">2021</span>
+          <span class="thumb"><img src="assets/img/112171cbb2534dc588a53a9c0d4a0c8c-1300.webp" srcset="assets/img/112171cbb2534dc588a53a9c0d4a0c8c-480.webp 480w, assets/img/112171cbb2534dc588a53a9c0d4a0c8c-800.webp 800w, assets/img/112171cbb2534dc588a53a9c0d4a0c8c-1300.webp 1300w" sizes="(min-width: 760px) 200px, 110px" data-fallback="https://static.wixstatic.com/media/a67c6c_112171cbb2534dc588a53a9c0d4a0c8c~mv2.jpg/v1/fit/w_1300,h_5200,q_85/112171cbb2534dc588a53a9c0d4a0c8c.webp" alt="Foglie D&#x27;autunno — Pasta Design Course" width="638" height="358" loading="lazy" decoding="async"></span>
         </a></li>
        </ol>
       <p class="see-all"><a class="btn" href="work/index.html">See all projects →</a></p>
@@ -170,6 +185,9 @@
       <a href="https://www.instagram.com/shmuely/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.7 21.31.27 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></a>
     </div>
   </footer>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.0.0/dist/model-viewer.min.js"></script>
+  <script src="assets/js/aok-3d.js?v=20261014a" defer></script>
+  <script src="assets/js/ikeaish-3d.js?v=20261014a" defer></script>
   <script src="assets/js/script.js?v=20261013b" defer></script>
 </body>
 </html>
