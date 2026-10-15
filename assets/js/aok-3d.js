@@ -1,7 +1,9 @@
 /* A.O.K. 3D models: mode buttons for each <model-viewer data-modes="Label:key,...">.
    The GLB holds one clip per transition, named "<from>__<to>", so switching
    goes straight from the current mode to the new one (no reset). Each clip
-   plays once and holds its last frame. Clicks during a transition are queued. */
+   plays once and holds its last frame. If the GLB also has "<mode>__loop"
+   (e.g. the Kit's fire flicker), that clip loops once the mode is reached.
+   Clicks during a transition are queued. */
 (function () {
   "use strict";
   function playClip(mv, name) {
@@ -16,6 +18,17 @@
         mv.play({ repetitions: 1 });
       });
     });
+  }
+  function playLoop(mv, name) {
+    mv.pause();
+    mv.animationName = name;
+    Promise.resolve(mv.updateComplete).then(function () {
+      mv.currentTime = 0;
+      mv.play();
+    });
+  }
+  function hasClip(mv, name) {
+    return (mv.availableAnimations || []).indexOf(name) !== -1;
   }
   document.querySelectorAll("model-viewer[data-modes]").forEach(function (mv) {
     var host = mv.parentElement.querySelector(".states");
@@ -32,7 +45,8 @@
       cur = target;
       playClip(mv, clip).then(function () {
         busy = false;
-        if (want !== null) { var w = want; want = null; go(w); }
+        if (want !== null) { var w = want; want = null; go(w); return; }
+        if (hasClip(mv, cur + "__loop")) playLoop(mv, cur + "__loop");
       });
     }
     modes.forEach(function (p, i) {

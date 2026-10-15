@@ -38,3 +38,8 @@
 .hero-3d .model-card figcaption a:hover{text-decoration:underline}
 @media (max-width:760px){.hero-3d .model-grid{grid-template-columns:1fr;gap:32px}}
 .hero-3d .model-card figcaption a.more{color:var(--mute);font-size:14px;font-weight:400}
+/* A.O.K. page: square small viewers */
+.model-grid--aok .model-card model-viewer{aspect-ratio:1/1}
+/* Wide card (A.O.K. Kit): own row, centered, max 720px */
+.model-card--wide{grid-column:1/-1;width:100%;max-width:720px;justify-self:center;margin-top:24px}
+.model-grid--aok .model-card--wide model-viewer{aspect-ratio:4/3}

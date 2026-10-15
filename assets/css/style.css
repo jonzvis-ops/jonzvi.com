@@ -211,3 +211,6 @@ ul,ol{list-style:none}
   .site-footer{flex-direction:column;gap:12px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* home: skills right after intro (no hero) */
+.home .intro+.skills{padding-top:24px}

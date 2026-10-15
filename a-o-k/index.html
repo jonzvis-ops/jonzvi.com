@@ -19,8 +19,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800&display=swap">
-  <link rel="stylesheet" href="../assets/css/style.css?v=20261013e">
-<link rel="stylesheet" href="../assets/css/model-3d.css?v=20261014c">
+  <link rel="stylesheet" href="../assets/css/style.css?v=20261016a">
+<link rel="stylesheet" href="../assets/css/model-3d.css?v=20261016a">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to Main Content</a>
@@ -54,20 +54,25 @@
     </div>
     <section class="wrap model-3d" aria-label="3D models">
       <h2 class="label">3D models</h2>
-      <div class="model-grid">
+      <div class="model-grid model-grid--aok">
         <figure class="model-card">
-          <model-viewer src="../assets/models/aok_stove.glb" data-modes="Folded:folded,Open:open,Wide:wide" animation-crossfade-duration="0" alt="3D model of the A.O.K. compact stove and grill" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="1" shadow-softness="0.8" exposure="1" environment-image="neutral" camera-target="0m 0.065m 0m" camera-orbit="30deg 60deg 0.6m" max-camera-orbit="auto auto 1.5m" field-of-view="30deg" loading="lazy" reveal="auto"></model-viewer>
+          <model-viewer disable-zoom src="../assets/models/aok_stove.glb" data-modes="Folded:folded,Open:open,Wide:wide" animation-crossfade-duration="0" alt="3D model of the A.O.K. compact stove and grill" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="1" shadow-softness="0.8" exposure="1" environment-image="neutral" camera-target="0m 0.065m 0m" camera-orbit="30deg 60deg 0.6m" max-camera-orbit="auto auto 1.5m" field-of-view="30deg" loading="lazy" reveal="auto"></model-viewer>
           <figcaption><strong>Stove</strong><span>Folding grill</span></figcaption>
           <div class="states"></div>
         </figure>
         <figure class="model-card">
-          <model-viewer src="../assets/models/aok_multitool.glb" data-modes="Closed:closed,Wine opener:wine,Can opener:can,Fire:fire,Knife:knife,All open:allopen" animation-crossfade-duration="0" alt="3D model of the A.O.K. multi-tool" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0" exposure="1" environment-image="neutral" camera-target="0.01m 0.075m 0m" camera-orbit="25deg 75deg 0.62m" max-camera-orbit="auto auto 1.5m" field-of-view="30deg" loading="lazy" reveal="auto"></model-viewer>
+          <model-viewer disable-zoom src="../assets/models/aok_multitool.glb" data-modes="Closed:closed,Wine opener:wine,Can opener:can,Fire:fire,Knife:knife,All open:allopen" animation-crossfade-duration="0" alt="3D model of the A.O.K. multi-tool" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0" exposure="1" environment-image="neutral" camera-target="0.01m 0.075m 0m" camera-orbit="25deg 75deg 0.62m" max-camera-orbit="auto auto 1.5m" field-of-view="30deg" loading="lazy" reveal="auto"></model-viewer>
           <figcaption><strong>Multi-tool</strong><span>Knife, openers, fire starter</span></figcaption>
           <div class="states"></div>
         </figure>
         <figure class="model-card">
-          <model-viewer src="../assets/models/aok_spork.glb" data-modes="Short:short,Extended:extended" animation-crossfade-duration="0" alt="3D model of the A.O.K. spork with adjustable handle" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0" exposure="1" environment-image="neutral" camera-target="0m 0.042m 0m" camera-orbit="25deg 75deg 0.47m" max-camera-orbit="auto auto 1.2m" field-of-view="30deg" loading="lazy" reveal="auto"></model-viewer>
+          <model-viewer disable-zoom src="../assets/models/aok_spork.glb" data-modes="Short:short,Extended:extended" animation-crossfade-duration="0" alt="3D model of the A.O.K. spork with adjustable handle" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0" exposure="1" environment-image="neutral" camera-target="0m 0.042m 0m" camera-orbit="25deg 75deg 0.47m" max-camera-orbit="auto auto 1.2m" field-of-view="30deg" loading="lazy" reveal="auto"></model-viewer>
           <figcaption><strong>Spork</strong><span>Adjustable handle</span></figcaption>
+          <div class="states"></div>
+        </figure>
+        <figure class="model-card model-card--wide">
+          <model-viewer disable-zoom src="../assets/models/aok_kit.glb" data-modes="Packed:packed,Set up:setup" animation-crossfade-duration="0" alt="3D model of the A.O.K. kit: stove, multi-tool and spork packed inside two pots, then set up for cooking" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="1" shadow-softness="0.8" exposure="1" environment-image="neutral" camera-target="0.02m 0.11m -0.03m" camera-orbit="25deg 75deg 1.25m" max-camera-orbit="auto auto 3m" field-of-view="30deg" loading="lazy" reveal="auto"></model-viewer>
+          <figcaption><strong>Kit</strong><span>Packs inside the pots</span></figcaption>
           <div class="states"></div>
         </figure>
       </div>
@@ -116,6 +121,6 @@
   </footer>
   <script src="../assets/js/script.js?v=20261013b" defer></script>
 <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.0.0/dist/model-viewer.min.js"></script>
-<script src="../assets/js/aok-3d.js?v=20261014a" defer></script>
+<script src="../assets/js/aok-3d.js?v=20261015a" defer></script>
 </body>
 </html>
