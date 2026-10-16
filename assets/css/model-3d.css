@@ -43,3 +43,10 @@
 /* Wide card (A.O.K. Kit): own row, centered, max 720px */
 .model-card--wide{grid-column:1/-1;width:100%;max-width:720px;justify-self:center;margin-top:24px}
 .model-grid--aok .model-card--wide model-viewer{aspect-ratio:4/3}
+/* zoom / centre buttons inside each 3D viewer (desktop only) */
+.mv-zoom{position:absolute;right:10px;bottom:10px;display:flex;gap:6px;z-index:2}
+.mv-zoom button{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:rgba(246,245,242,.9);color:var(--ink);font:500 17px/1 var(--font);display:grid;place-items:center;cursor:pointer;padding:0}
+.mv-zoom button:hover{border-color:var(--ink)}
+.mv-zoom button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.mv-zoom svg{width:15px;height:15px;fill:currentColor}
+@media (hover:none){.mv-zoom{display:none}}
